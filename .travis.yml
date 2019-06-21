@@ -1,1 +1,4 @@
 language: r
+
+before_script:
+  - Rscript src/test.R
