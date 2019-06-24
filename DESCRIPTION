@@ -1,0 +1,5 @@
+Package: quality
+Type: Book
+Title: Quality of opendata
+Version: 0.0.1
+Imports: rmarkdown, htmltools
