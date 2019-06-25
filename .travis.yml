@@ -6,5 +6,15 @@ sudo: false
 cache: 
   packages: yes
 
-before_script:
-  - Rscript src/test.R
+script:
+  - git config --global user.email "stephane.trainel@gmail.com"
+  - git config --global user.name "Stéphane Trainel"
+  - git clone -b gh-pages https://${GITHUB_PAT}@github.com/${TRAVIS_REPO_SLUG}.git output
+  - cp ./src/*.Rmd ./output
+  - cp ./src/*.R ./output
+  - cd output
+  - Rscript -e "rmarkdown::render('dashboard.Rmd')"
+  - git add --all -f ./*
+  - git commit -m"Update site"
+  - git push origin gh-pages
+ 
