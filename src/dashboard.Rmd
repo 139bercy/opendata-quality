@@ -13,6 +13,6 @@ knitr::opts_chunk$set(echo = FALSE, warning=FALSE)
 
 ```{r ,fig.width=6,echo=FALSE,message=FALSE,results="asis"} 
 source("first.R")
-cat("### INPI : ", nb1, " / ", nb2, " / ", nb3)
+cat("### INPI : ", nb1, " / ", nb2, " / ", nb3, " -> ", nb)
 ```
 
