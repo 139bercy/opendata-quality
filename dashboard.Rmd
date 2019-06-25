@@ -1,0 +1,18 @@
+---
+title: "dashboard"
+author: "MEF / Bercy hub"
+date: "6/24/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE)
+```
+
+## Liste des tests
+
+```{r ,fig.width=6,echo=FALSE,message=FALSE,results="asis"} 
+source("first.R")
+cat("### INPI : ", nb1, " / ", nb2, " / ", nb3, " -> ", nb)
+```
+
