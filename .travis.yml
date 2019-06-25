@@ -1,4 +1,10 @@
+branches:
+  only:
+  - master
 language: r
+sudo: false
+cache: 
+  packages: yes
 
 before_script:
   - Rscript src/test.R
