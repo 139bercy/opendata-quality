@@ -15,6 +15,6 @@ script:
   - cd output
   - Rscript -e "rmarkdown::render('dashboard.Rmd')"
   - git add --all -f ./*
-  - git commit -m"Update site"
+  - git commit --allow-empty -m"Update site"
   - git push origin gh-pages
  
