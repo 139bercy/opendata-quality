@@ -4,24 +4,8 @@ require(rjson)
 
 warning <- 0.1 # 1 pour 1000
 
-# Fonctions tests pour les dates et les numériques 
-IsDate <- function(x) {
-  tryCatch(!is.na(as.Date(x, "%Y-%m-%d")),  
-           error = function(err) {FALSE})  
-}
-IsYear <- function(x) {
-  tryCatch(str_length(x) == 4 & str_detect(x, "\\d{5}"),  
-           error = function(err) {FALSE})  
-}
-IsNumeric <- function(x) {
-  tryCatch(!is.na(as.numeric(x)),  
-           error = function(err) {FALSE})  
-}
-NoLetters <- function(x) {
-  tryCatch(!str_detect(x, "[:alpha:]"),  
-           error = function(err) {FALSE})  
-}
-
+source("format/date.R")
+source("format/numeric.R")
 
 controls_list <- "data/controls_list.csv"
 
@@ -54,5 +38,4 @@ for (i in 1:nrow(data)) {
   
   dataset_id_old <- dataset_id
 }
-
 
