@@ -2,7 +2,7 @@ Package: quality
 Type: Book
 Title: Quality of opendata
 Version: 0.0.1
-Imports: rmarkdown, htmltools
+Imports: rmarkdown, htmltools, rjson
 License: MIT
 Description: Outil de diagnostic de la qualité des données
 Authors@R: person("Stéphane", "Trainel", role = c("aut", "cre"), email = "stephane.trainel@gmail.com", comment = c(ORCID = "0000-0002-4473-3121"))
