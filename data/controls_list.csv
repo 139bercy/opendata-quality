@@ -1,0 +1,5 @@
+dataset_id;datavar_id;function_preproc;function_control
+marques-francaises;date_de_depot;;IsDate
+marques-francaises;date_d_expiration;;IsDate
+marques-francaises;classes_des_produits_et_services;;NoLetters
+les-jeunes-entreprises-innovantes;annee;;IsYear
